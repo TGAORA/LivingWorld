@@ -145,7 +145,7 @@ This repository is documentation-first by design. Code will follow vision, not p
 ## Final Note
 
 This is not a live-service treadmill.
-This is not a content-first MMO.
+This is not a content driven MMO, this is a philosophy driven MMO.
 
 This is a **world that remembers people**.
 
