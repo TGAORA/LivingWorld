@@ -1,7 +1,7 @@
 {
   "metaData":{
     "title":"The Caretaker of Ruins",
-    "author":"Contributor_Name",
+    "author":"Living World",
     "narrated":false,
     "reception":false,
     "narration":null,
@@ -47,19 +47,25 @@
           "speaker":"Irel",
           "text":[
             "“It hasn’t fallen yet,” they said quietly, adjusting a loose stone."
-          ]
+          ],
+          "tone":"quite",
+          "actionReference":"maintain"
         },
         {
           "speaker":"Player",
           "text":[
-            "“No one lives here anymore.”"
-          ]
+            "(ANYTHING SAID)"
+          ],
+          "tone":null,
+          "actionReference":null
         },
         {
           "speaker":"Irel",
           "text":[
-            "“That’s why it needs watching.”"
-          ]
+            "“They need watching.”"
+          ],
+          "tone":"softly assertive",
+          "actionReference":null
         }
       ]
     },
