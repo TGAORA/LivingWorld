@@ -1,0 +1,107 @@
+{
+  "metaData":{
+    "title":"The Caretaker of Ruins",
+    "author":"Contributor_Name",
+    "narrated":false,
+    "reception":false,
+    "narration":null,
+    "receptionRating":null
+  },
+  "notes":{
+    "general":"Former player NPC focused on environmental memory",
+    "technical":"No quest hooks, ambient presence only"
+  },
+  "characters":[
+    {
+      "name":"Irel",
+      "traits":[
+        "Patience",
+        "Stewardship",
+        "Attachment"
+      ],
+      "playstyle":[
+        "Environment-focused",
+        "Non-dominant",
+        "Long-lived"
+      ]
+    }
+  ],
+  "content":[
+    {
+      "type":"context",
+      "index":1,
+      "text":[
+        "Irel is usually found near broken structures or abandoned paths.",
+        "They carry simple tools but rarely use them on anything new."
+      ]
+    },
+    {
+      "type":"dialogue",
+      "index":2,
+      "speakers":[
+        "Irel",
+        "Player"
+      ],
+      "lines":[
+        {
+          "speaker":"Irel",
+          "text":[
+            "“It hasn’t fallen yet,” they said quietly, adjusting a loose stone."
+          ]
+        },
+        {
+          "speaker":"Player",
+          "text":[
+            "“No one lives here anymore.”"
+          ]
+        },
+        {
+          "speaker":"Irel",
+          "text":[
+            "“That’s why it needs watching.”"
+          ]
+        }
+      ]
+    },
+    {
+      "type":"context",
+      "index":3,
+      "text":[
+        "They speak to broken walls and worn paths as if they might still listen.",
+        "They never explain why."
+      ]
+    }
+  ],
+  "systemData":[
+    {
+      "actions":[
+        {
+          "id":"maintain",
+          "variance":"world",
+          "action":"adjust",
+          "traits":[
+            "patient",
+            "careful"
+          ],
+          "description":"Subtly tends nearby structures and terrain",
+          "condition":"nearby",
+          "triggers":[
+            "World"
+          ]
+        },
+        {
+          "id":"idle",
+          "action":"remain",
+          "traits":[
+            "persistent"
+          ],
+          "description":"Stays near abandoned locations",
+          "condition":"any",
+          "triggers":[
+            "none"
+          ]
+        }
+      ]
+    }
+  ]
+}
