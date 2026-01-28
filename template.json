@@ -1,0 +1,108 @@
+[
+  {
+    "metaData":{
+      "title":"An Example a Characters of format",
+      "author":"Living World",
+      "narrated":false,
+      "reception":false,
+      "narration":null,
+      "receptionRating":null
+    }
+  },
+  {
+    "notes":{
+      "general":"Internal field",
+      "technical":"Non-writer field"
+    }
+  },
+  {
+    "characters":[
+      {
+        "name":"Character",
+        "traits":[
+          "Loyal",
+          "Ruthless"
+        ],
+        "playstyle":[
+          "Aggressive",
+          "Submissive",
+          "Observant"
+        ]
+      }
+    ]
+  },
+  {
+    "content":[
+      {
+        "type":"context",
+        "index":1,
+        "text":[
+          "This Character has seen better days",
+          "His clothing is worn and slight tattered, and he smells or rum",
+          "blood stains his leather outer layers, yet he a timidness",
+          "not completely spoken."
+        ]
+      },
+      {
+        "type":"dialogue",
+        "index":2,
+        "speakers":[
+          "Character",
+          "Healer",
+          "NPC"
+        ],
+        "lines":[
+          {
+            "speaker":"Character",
+            "text":[
+              "HEY! What do you think you're doing?"
+            ]
+          },
+          {
+            "speaker":"NPC",
+            "text":[
+              "Nothing, just passing through."
+            ]
+          },
+          {
+            "speaker":"Character",
+            "text":[
+              "Yeah you better, or I might lug ya!"
+            ]
+          },
+          {
+            "speaker":"Healer",
+            "text":[
+              "I wouldn't advise that, besides, you should get some rest",
+              "feels like a bit too much has been had here."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "systemData":[
+      {
+        "actions":[
+          {
+            "id":"approach",
+            "variance":"aggressive",
+            "action":"movement",
+            "traits":[
+              "aggressive",
+              "loud",
+              "unsettling"
+            ],
+            "description":"Aggressively approaches anyone near",
+            "condition":"nearby",
+            "triggers":[
+              "NPC",
+              "Player"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
