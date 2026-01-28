@@ -32,7 +32,7 @@
    },
    {
       "narration":"no_file",
-      "receiption":"no_star_rating"
+      "reception":"no_star_rating"
    },
    {
       "type":"context",
@@ -59,7 +59,7 @@
       "index":3,
       "speakers":[
          "Ashen",
-         "Player"
+         "NPC"
       ],
       "lines":[
          {
@@ -137,13 +137,13 @@
       ]
    },
    {
-      "type":"paragraph",
+      "type":"context",
       "index":6,
       "text":[
          "Players noticed him eventually, They always did.",
          "He remembered their old looks, wears, or accessories; things like",
          "hairstyles, armor sets, and gems. He also commented on players’",
-         "reputations or even asked about old companions."
+         "nature or even asked about old companions."
       ]
    },
    {
@@ -258,7 +258,7 @@
             "traits":[
                "social",
                "curious",
-               "creepy"
+               "unsettling"
             ],
             "description":"Calmly observe passers-by, events, and surroundings",
             "condition":"multipleNearby",
