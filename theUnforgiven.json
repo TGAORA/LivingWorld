@@ -1,0 +1,109 @@
+{
+  "metaData":{
+    "title":"The Unforgiven",
+    "author":"Living World",
+    "narrated":false,
+    "reception":false,
+    "narration":null,
+    "receptionRating":null
+  },
+  "notes":{
+    "general":"Former player NPC: past violence, now refuses authority; others still defer.",
+    "technical":"Avoid explicit confession. Convey weight through refusals and pauses."
+  },
+  "characters":[
+    {
+      "name":"Kellan",
+      "traits":[
+        "Guilt",
+        "Responsibility",
+        "Restraint"
+      ],
+      "playstyle":[
+        "Past aggressive",
+        "Later withdrawal",
+        "Long-lived"
+      ]
+    }
+  ],
+  "content":[
+    {
+      "type":"context",
+      "index":1,
+      "text":[
+        "Kellan stands where decisions get made, but never makes them aloud.",
+        "When people ask, he looks at their hands first."
+      ]
+    },
+    {
+      "type":"dialogue",
+      "index":2,
+      "speakers":[
+        "Kellan",
+        "Player"
+      ],
+      "lines":[
+        {
+          "speaker":"Player",
+          "text":[
+            "“Tell us what to do.”"
+          ],
+          "tone":"pleading",
+          "actionReference":null
+        },
+        {
+          "speaker":"Kellan",
+          "text":[
+            "He shook his head once.",
+            "“No.”"
+          ],
+          "tone":"flat, absolute",
+          "actionReference":"refuse_command"
+        },
+        {
+          "speaker":"Kellan",
+          "text":[
+            "“If you choose it, you can live with it.”"
+          ],
+          "tone":"tired, protective",
+          "actionReference":null
+        }
+      ]
+    }
+  ],
+  "systemData":[
+    {
+      "actions":[
+        {
+          "id":"refuse_command",
+          "variance":"none",
+          "action":"shake_head",
+          "traits":[
+            "restrained",
+            "stoic"
+          ],
+          "description":"Refuses to issue orders",
+          "condition":"askedToLead",
+          "triggers":[
+            "Player",
+            "NPC"
+          ]
+        },
+        {
+          "id":"silent_presence",
+          "variance":"none",
+          "action":"remain",
+          "traits":[
+            "heavy",
+            "steady"
+          ],
+          "description":"Presence discourages rash actions nearby",
+          "condition":"any",
+          "triggers":[
+            "World"
+          ]
+        }
+      ]
+    }
+  ]
+}
