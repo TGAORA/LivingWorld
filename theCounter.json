@@ -1,0 +1,109 @@
+{
+  "metaData":{
+    "title":"The Counter of Small Things",
+    "author":"Living World",
+    "narrated":false,
+    "reception":false,
+    "narration":null,
+    "receptionRating":null
+  },
+  "notes":{
+    "general":"Former player NPC: optimizer burnout; notices everything, acts on little.",
+    "technical":"No explicit systems talk; counting is diegetic."
+  },
+  "characters":[
+    {
+      "name":"Sable",
+      "traits":[
+        "Precision",
+        "Obsession",
+        "Fatigue"
+      ],
+      "playstyle":[
+        "Optimization-focused",
+        "Late burnout",
+        "Observant"
+      ]
+    }
+  ],
+  "content":[
+    {
+      "type":"context",
+      "index":1,
+      "text":[
+        "Sable mutters numbers under their breath while watching foot traffic.",
+        "They correct small mistakes no one asked about."
+      ]
+    },
+    {
+      "type":"dialogue",
+      "index":2,
+      "speakers":[
+        "Sable",
+        "Player"
+      ],
+      "lines":[
+        {
+          "speaker":"Sable",
+          "text":[
+            "“Three steps too far left,” they said, not looking up."
+          ],
+          "tone":"dry, absorbed",
+          "actionReference":"measure"
+        },
+        {
+          "speaker":"Player",
+          "text":[
+            "(ANYTHING SAID)"
+          ],
+          "tone":null,
+          "actionReference":null
+        },
+        {
+          "speaker":"Sable",
+          "text":[
+            "“I already tried fixing the big parts.”"
+          ],
+          "tone":"weary",
+          "actionReference":null
+        }
+      ]
+    }
+  ],
+  "systemData":[
+    {
+      "actions":[
+        {
+          "id":"measure",
+          "variance":"none",
+          "action":"count",
+          "traits":[
+            "precise",
+            "restless"
+          ],
+          "description":"Counts and corrects small details in the environment",
+          "condition":"nearby",
+          "triggers":[
+            "Player",
+            "World"
+          ]
+        },
+        {
+          "id":"withdraw",
+          "variance":"none",
+          "action":"avoid",
+          "traits":[
+            "fatigued",
+            "guarded"
+          ],
+          "description":"Avoids leadership or big commitments",
+          "condition":"askedToHelpLarge",
+          "triggers":[
+            "Player",
+            "NPC"
+          ]
+        }
+      ]
+    }
+  ]
+}
