@@ -1,0 +1,109 @@
+{
+  "metaData":{
+    "title":"The One Who Left First",
+    "author":"Living World",
+    "narrated":false,
+    "reception":false,
+    "narration":null,
+    "receptionRating":null
+  },
+  "notes":{
+    "general":"Former player NPC: early leaver, survival-first, warning without lore.",
+    "technical":"No quest hooks. Proximity bark only. No prophecy; all observations feel practical."
+  },
+  "characters":[
+    {
+      "name":"Mara",
+      "traits":[
+        "Caution",
+        "Regret",
+        "Practicality"
+      ],
+      "playstyle":[
+        "Early disengagement",
+        "Survival-first",
+        "Non-dominant"
+      ]
+    }
+  ],
+  "content":[
+    {
+      "type":"context",
+      "index":1,
+      "text":[
+        "Mara waits near outward roads and river crossings, never inside the safest center.",
+        "She watches the sky more than she watches people."
+      ]
+    },
+    {
+      "type":"dialogue",
+      "index":2,
+      "speakers":[
+        "Mara",
+        "Player"
+      ],
+      "lines":[
+        {
+          "speaker":"Mara",
+          "text":[
+            "“Not yet,” she said, glancing past your shoulder.",
+            "“But soon enough. Leave while leaving is still easy.”"
+          ],
+          "tone":"calm, urgent-underneath",
+          "actionReference":"warn_exit"
+        },
+        {
+          "speaker":"Player",
+          "text":[
+            "(ANYTHING SAID)"
+          ],
+          "tone":null,
+          "actionReference":null
+        },
+        {
+          "speaker":"Mara",
+          "text":[
+            "“I’ve seen places turn,” she added, then stopped.",
+            "“I won’t tell you what that looked like.”"
+          ],
+          "tone":"restrained, final",
+          "actionReference":null
+        }
+      ]
+    }
+  ],
+  "systemData":[
+    {
+      "actions":[
+        {
+          "id":"warn_exit",
+          "variance":"world",
+          "action":"gesture",
+          "traits":[
+            "cautious",
+            "protective"
+          ],
+          "description":"Encourages leaving early; points toward safer routes",
+          "condition":"nearby",
+          "triggers":[
+            "Player"
+          ]
+        },
+        {
+          "id":"scan_horizon",
+          "variance":"none",
+          "action":"watch",
+          "traits":[
+            "alert",
+            "quiet"
+          ],
+          "description":"Watches weather and roads for change",
+          "condition":"any",
+          "triggers":[
+            "World"
+          ]
+        }
+      ]
+    }
+  ]
+}
