@@ -1,0 +1,107 @@
+{
+  "metaData":{
+    "title":"The Survivor Who Won’t Teach",
+    "author":"Living World",
+    "narrated":false,
+    "reception":false,
+    "narration":null,
+    "receptionRating":null
+  },
+  "notes":{
+    "general":"Former player NPC: extreme survivability; refuses to provide a recipe.",
+    "technical":"Silence is intentional; do not turn into tutorial NPC."
+  },
+  "characters":[
+    {
+      "name":"Rune",
+      "traits":[
+        "Endurance",
+        "Silence",
+        "Boundaries"
+      ],
+      "playstyle":[
+        "Long-lived",
+        "Self-reliant",
+        "Non-dominant"
+      ]
+    }
+  ],
+  "content":[
+    {
+      "type":"context",
+      "index":1,
+      "text":[
+        "Rune’s gear is plain, repaired often, and never flashy.",
+        "They watch the same horizon each day as if listening for change."
+      ]
+    },
+    {
+      "type":"dialogue",
+      "index":2,
+      "speakers":[
+        "Rune",
+        "Player"
+      ],
+      "lines":[
+        {
+          "speaker":"Player",
+          "text":[
+            "“How did you live this long?”"
+          ],
+          "tone":"curious",
+          "actionReference":null
+        },
+        {
+          "speaker":"Rune",
+          "text":[
+            "Rune stared for a long time.",
+            "“If I tell you, it won’t work.”"
+          ],
+          "tone":"firm, calm",
+          "actionReference":"set_boundary"
+        },
+        {
+          "speaker":"Rune",
+          "text":[
+            "“You have to earn your own version.”"
+          ],
+          "tone":"quiet, final",
+          "actionReference":null
+        }
+      ]
+    }
+  ],
+  "systemData":[
+    {
+      "actions":[
+        {
+          "id":"set_boundary",
+          "variance":"none",
+          "action":"refuse",
+          "traits":[
+            "guarded",
+            "steady"
+          ],
+          "description":"Refuses to teach survival as a formula",
+          "condition":"askedForGuide",
+          "triggers":[
+            "Player"
+          ]
+        },
+        {
+          "id":"endure",
+          "variance":"none",
+          "action":"remain",
+          "traits":[
+            "enduring"
+          ],
+          "description":"Remains present through harsh weather without comment",
+          "condition":"any",
+          "triggers":[
+            "World"
+          ]
+        }
+      ]
+    }
+  ]
+}
