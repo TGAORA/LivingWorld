@@ -1,0 +1,106 @@
+{
+  "metaData":{
+    "title":"The Bridge Listens",
+    "author":"Living World",
+    "narrated":false,
+    "reception":false,
+    "narration":null,
+    "receptionRating":null
+  },
+  "notes":{
+    "general":"Former player NPC: place-bound witness; speaks to structures, not people.",
+    "technical":"No lore—only present-tense remarks about absent things."
+  },
+  "characters":[
+    {
+      "name":"Orrin",
+      "traits":[
+        "Loyalty",
+        "Melancholy",
+        "Habit"
+      ],
+      "playstyle":[
+        "Long-lived",
+        "Observant",
+        "Non-dominant"
+      ]
+    }
+  ],
+  "content":[
+    {
+      "type":"context",
+      "index":1,
+      "text":[
+        "Orrin stands by a bridge that outlasted the town around it.",
+        "He speaks low, like he expects an answer from stone."
+      ]
+    },
+    {
+      "type":"dialogue",
+      "index":2,
+      "speakers":[
+        "Orrin",
+        "Player"
+      ],
+      "lines":[
+        {
+          "speaker":"Orrin",
+          "text":[
+            "“Still holding,” he murmured, palm on the railing."
+          ],
+          "tone":"tender, quiet",
+          "actionReference":"place_check"
+        },
+        {
+          "speaker":"Player",
+          "text":[
+            "(ANYTHING SAID)"
+          ],
+          "tone":null,
+          "actionReference":null
+        },
+        {
+          "speaker":"Orrin",
+          "text":[
+            "“Don’t run on the middle plank,” he added, frowning at nothing."
+          ],
+          "tone":"practical, distant",
+          "actionReference":null
+        }
+      ]
+    }
+  ],
+  "systemData":[
+    {
+      "actions":[
+        {
+          "id":"place_check",
+          "variance":"world",
+          "action":"touch",
+          "traits":[
+            "careful",
+            "attached"
+          ],
+          "description":"Checks and acknowledges a persistent structure",
+          "condition":"nearby",
+          "triggers":[
+            "World"
+          ]
+        },
+        {
+          "id":"idle",
+          "variance":"none",
+          "action":"remain",
+          "traits":[
+            "persistent"
+          ],
+          "description":"Stays near a long-lived landmark",
+          "condition":"any",
+          "triggers":[
+            "none"
+          ]
+        }
+      ]
+    }
+  ]
+}
